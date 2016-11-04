@@ -1,0 +1,40 @@
+{
+  "name": "nodecg-twitch-service",
+  "version": "0.0.0",
+  "description": "Provides nodecg events for Twitch",
+  "homepage": "https://gamemak.in",
+  "author": {
+    "name": "Michael Allar",
+    "email": "allar@michaelallar.com",
+    "url": "http://allarsblog.com"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "nodecg",
+    "twitch",
+    "service",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~0.8.0",
+    "dashboardPanels": [
+      {
+        "name": "twitch-service",
+        "title": "Twitch Service",
+        "width": 4,
+        "file": "twitch-service.html",
+        "headerColor": "#9f9bbd"
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT",
+  "dependencies": {
+    "twitch-sdk": "^0.3.1"
+  }
+}
