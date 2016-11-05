@@ -14,12 +14,14 @@ module.exports = function (nodecg) {
             dashboard: {
                 allowRefollow: nodecg.Replicant('DashboardAllowRefollow', {defaultValue: false}),
                 followerPollInterval: nodecg.Replicant('DashboardFollowerPollInterval', {defaultValue: 3}),
+                streamPollInterval: nodecg.Replicant('DashboardStreamPollInterval', {defaultValue: 6}),
             },
             user: {
             },
             channel: {
                 online: nodecg.Replicant('ChannelOnline', {defaultValue: "Unknown"}),
                 name: nodecg.Replicant('ChannelName', {defaultValue: "Unknown"}),
+                audience: nodecg.Replicant('ChannelAudience', {defaultValue: "everyone"}),
                 viewersTotal: nodecg.Replicant('ChannelViewersTotal', {defaultValue: 0}),
                 viewersCurrent: nodecg.Replicant('ChannelViewersCurrent', {defaultValue: 0}),
                 numFollowers: nodecg.Replicant('ChannelFollowers', {defaultValue: 0}),
