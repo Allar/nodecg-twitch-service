@@ -38,12 +38,15 @@ RepsAndNames.ReplicantData.channel.numFollowers.on('change', function(newValue, 
     document.getElementById("Followers").textContent = newValue;
 });
 
-RepsAndNames.ReplicantData.user.sparks.on('change', function(newValue, oldValue) {
-    document.getElementById("Sparks").textContent = newValue;
+var TriggerNewFollowerButton = document.getElementById("TriggerNewFollowerButton");
+TriggerNewFollowerButton.addEventListener('tap', (e) => {
+    var fakeFollowerName = document.querySelector("#FakeFollowerName").value;
+    if (fakeFollowerName !== null && fakeFollowerName.length > 0) {
+        var fakeUser = { display_name: fakeFollowerName };
+        nodecg.sendMessage(RepsAndNames.MessageNames.channel.followed, fakeUser);
+    }
+    
 });
 
-RepsAndNames.ReplicantData.user.experience.on('change', function(newValue, oldValue) {
-    document.getElementById("Experience").textContent = newValue;
-});
 
 nodecg.sendMessageToBundle(RepsAndNames.MessageNames.dashboard.updateRequest, 'nodecg-twitch-service');

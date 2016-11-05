@@ -1,6 +1,7 @@
 {
   "name": "nodecg-twitch-service",
   "dependencies": {
+    "paper-input": "PolymerElements/paper-input",
     "nodecg-replicant-input": "NodeCGElements/nodecg-replicant-input",
     "nodecg-toggle": "NodeCGElements/nodecg-toggle",
     "paper-card": "PolymerElements/paper-card",
