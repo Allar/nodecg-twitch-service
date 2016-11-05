@@ -35,9 +35,9 @@ Example config file:
 }
 ```
 
-# Accessing Beam Data
+# Accessing Twitch Data
 
-This service provides Beam data in two ways. Replicants and messages.
+This service provides Twitch data in two ways. Replicants and messages.
 
 ## Replicants
 
@@ -51,10 +51,6 @@ This service provides Beam data in two ways. Replicants and messages.
 * `ChannelFollowers`: Number, the number of users following the channel.
 
 ## Messages
-
-### Dashboard
-
-* `dashboard-update-request`: If this bundle receives this message, it will trigger a force update of the channel data using Beam's REST API.
 
 ### Channel
 
