@@ -1,6 +1,6 @@
 {
   "name": "nodecg-twitch-service",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Provides nodecg events for Twitch",
   "homepage": "https://gamemak.in",
   "author": {
@@ -35,6 +35,6 @@
   "repository": "https://github.com/nodecg/nodecg.git",
   "license": "MIT",
   "dependencies": {
-    "twitch-sdk": "^0.3.1"
+    "twitch-sdk": "spiffyk/twitch-node-sdk"
   }
 }
