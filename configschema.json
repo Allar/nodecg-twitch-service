@@ -1,8 +1,8 @@
 {
     "type": "object",
     "properties": {
-        "channel": { "type": "string" },
-        "client_id": { "type": "string" }
+        "channel": { "type": "string", "default": "awesomeallar" },
+        "client_id": { "type": "string", "default": "j77r004373kwkz1k2msm5yhxy2ynzl" }
     },
     "required": ["channel", "client_id"]
 }
